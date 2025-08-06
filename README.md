@@ -5,7 +5,7 @@ A simple and fun web-based cricket-themed game using **HTML**, **CSS**, and **Ja
 ---
 
 ## 🎮 Game Rules
-
+- **UserChoice vs Computer Choice**
 - **Bat vs Ball** → ❌ Computer Wins  
 - **Ball vs Bat** → ✅ Player Wins  
 - **Ball vs Stumps** → ✅ Player Wins  
