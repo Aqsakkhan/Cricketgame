@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="rules.js" defer></script>
+</head>
+
+<body>
+    <div class="cricket-game">
+        <h1>Cricket Game</h1>
+        <button id="showRulesBtn" class="rules-btn">📜 Show Game Rules</button>
+        <div id="rulesModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Game Rules</h2>
+                <ul>
+                    <li><strong>Bat</strong> vs <strong>Ball</strong> → <span class="computer">Computer Wins</span></li>
+                    <li><strong>Ball</strong> vs <strong>Bat</strong> → <span class="player">Player Wins</span></li>
+                    <li><strong>Ball</strong> vs <strong>Stumps</strong> → <span class="player">Player Wins</span></li>
+                    <li><strong>Stumps</strong> vs <strong>Ball</strong> → <span class="computer">Computer Wins</span>
+                    </li>
+                    <li><strong>Bat</strong> vs <strong>Stumps</strong> → <span class="computer">Computer Wins</span>
+                    </li>
+                    <li><strong>Stumps</strong> vs <strong>Bat</strong> → <span class="player">Player Wins</span></li>
+                    <li><strong>Same Choice</strong> → <span class="draw">It's a Draw</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="button-row">
+            <button id="start-game">
+                ▶ Start Game
+            </button>
+            <button id="reset-game">
+                🔁 Reset Game
+            </button>
+        </div>
+        <div class="scoreboard">
+            <input type="text" id="user-score" placeholder="Your score" readonly>
+            <input type="text" id="computer-score" placeholder="Computer score" readonly>
+        </div>
+        <div class="game-controls">
+            <button class="game" id="bat">Bat <span class="icon">🏏</span></button>
+            <button class="game" id="ball">Ball <span class="icon">⚾</span></button>
+            <button class="game" id="stumps">Stumps <span class="icon">⛳</span></button>
+        </div>
+
+    </div>
+</body>
+
+</html>
